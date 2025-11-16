@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Sylvia Plath Quote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        #quote {
+            font-size: 1.6em;
+            font-style: italic;
+            max-width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quote"></div>
+
+    <script>
+        const quotes = [
+            "I desire the things which will destroy me in the end.",
+            "The worst enemy to creativity is self-doubt.",
+            "I took a deep breath and listened to the old brag of my heart.",
+            "Perhaps when we find ourselves wanting everything, it is because we are dangerously close to wanting nothing.",
+            "Let me live, love, and say it well in good sentences."
+        ];
+
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById("quote").innerText = randomQuote;
+    </script>
+</body>
+</html>
